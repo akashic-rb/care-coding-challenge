@@ -1,0 +1,11 @@
+thead .asc::before {
+    content: "▲";
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+thead .desc::before {
+    content: "▼";
+    display: inline-block;
+    margin-right: .5rem;
+}
