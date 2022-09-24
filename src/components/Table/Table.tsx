@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { FaCaretUp, FaCaretDown } from "react-icons/fa"
 import { CoinMetadata } from "../../service/coins"
 import { toFixedNumber, toPositiveNumber } from "../../utils/number"
-import "./table.scss"
+import "./Table.style.scss"
 import useSortData from "../../hooks/useSortData"
 
 interface CoinListProps {

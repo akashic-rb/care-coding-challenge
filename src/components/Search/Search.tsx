@@ -11,12 +11,14 @@ const Search = () => {
     }
 
     return (
-        <form className="input-group mb-3" onSubmit={ search }>
-            <input type="text" className="form-control" placeholder="Search coin by name or symbol" onChange={e => setKeyword(e.target.value)}/>
-            <div className="input-group-append">
-                <button className="btn btn-outline-secondary" type="submit">
-                    <FaSearch/>
-                </button>
+        <form onSubmit={ search }>
+            <div className="input-group mb-3">
+                <input type="text" className="form-control" placeholder="Search coin by name or symbol" onChange={e => setKeyword(e.target.value)}/>
+                <div className="input-group-append">
+                    <button className="input-group-text btn btn-outline-secondary" type="submit">
+                        <FaSearch/>
+                    </button>
+                </div>
             </div>
         </form>
     )
